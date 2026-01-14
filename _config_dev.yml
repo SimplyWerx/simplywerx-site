@@ -13,8 +13,8 @@
 
 # theme: jekyll-agency
 
-url: "https://simplywerx.com" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/simplywerx-site"
+url: "http://localhost:4000"
+baseurl: ""
 
 title      : Team SimplyWerx
 email      : feedback@simplywerx.com #this is also the email contact forms will go to
