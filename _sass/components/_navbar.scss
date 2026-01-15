@@ -15,7 +15,7 @@
     color: $primary;
     @include script-font;
     img {
-        max-width: 60vw;
+        max-width: 55vw;
         height: auto;
     }
     &.active,
@@ -50,14 +50,14 @@
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: rgba(233, 236, 239, 0.7);  // adjust the last number (0-1) for transparency;
+    background-color: rgba(233, 236, 239, 0.7);  // $gray-200 with transparency
     .navbar-brand {
       font-size: 1.75em;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;
       img {
-        max-width: 60vw;
+        max-width: 55vw;
         height: auto;
       }
     }
