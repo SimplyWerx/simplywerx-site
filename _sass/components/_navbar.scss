@@ -14,6 +14,9 @@
   .navbar-brand {
     color: $primary;
     @include script-font;
+    img {
+        max-height: 50vw;
+    }
     &.active,
     &:active,
     &:focus,
@@ -52,6 +55,9 @@
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;
+      img {
+        max-height: 50vw;
+      }
     }
     .navbar-nav {
       .nav-item {
