@@ -1,0 +1,75 @@
+/* Scattered Photos Background Effect */
+.scattered-photos-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.scattered-photo {
+  position: absolute;
+  opacity: 0;
+  animation: fadeInPhoto 1.0s ease-out forwards;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+  transition: transform 0.1s ease-out;
+}
+
+.scattered-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 3px solid rgba(255, 255, 255, 0.9);
+}
+
+@keyframes fadeInPhoto {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) rotate(0deg);
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+/* Ensure header content stays on top */
+header.masthead {
+  position: relative;
+  overflow: hidden;
+}
+
+header.masthead .container {
+  position: relative;
+  z-index: 1;
+}
+
+header.masthead .intro-text {
+  position: relative;
+  z-index: 1;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
+}
+
+/* Dark overlay to improve text readability */
+header.masthead::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .scattered-photo {
+    width: 100px !important;
+    height: 100px !important;
+  }
+}

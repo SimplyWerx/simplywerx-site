@@ -12,7 +12,7 @@
 en: &DEFAULT_EN
   header:
     title: "You dream it. We bring it to life."
-    text: "Engineering creativity into reality: devices, apps, and experiences that inspire and engage."
+    text: "Engineering creativity into reality:<br>devices, apps, and experiences that inspire and engage."
     button: Tell Me More
     buttonlink: "#services"
 
