@@ -15,7 +15,7 @@
     color: $primary;
     @include script-font;
     img {
-        max-width: 50vw;
+        max-width: 60vw;
         height: auto;
     }
     &.active,
@@ -57,7 +57,7 @@
       -moz-transition: all 0.3s;
       transition: all 0.3s;
       img {
-        max-width: 50vw;
+        max-width: 60vw;
         height: auto;
       }
     }
