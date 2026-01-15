@@ -41,12 +41,16 @@
         // Clear existing photos
         container.innerHTML = '';
 
-        const selectedPhotos = getRandomPhotos(config.photoCount);
+        // Adjust photo count based on screen size
+        const isMobile = window.innerWidth <= 768;
+        const photoCount = isMobile ? Math.ceil(config.photoCount/1.5) : config.photoCount;
+        
+        const selectedPhotos = getRandomPhotos(photoCount);
         
         // Calculate optimal grid dimensions based on photo count
-        const photoCount = selectedPhotos.length;
-        const cols = Math.ceil(Math.sqrt(photoCount));
-        const rows = Math.ceil(photoCount / cols);
+        const actualPhotoCount = selectedPhotos.length;
+        const cols = Math.ceil(Math.sqrt(actualPhotoCount));
+        const rows = Math.ceil(actualPhotoCount / cols);
         const cellWidth = 100 / cols;
         const cellHeight = 100 / rows;
         
