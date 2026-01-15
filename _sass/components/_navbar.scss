@@ -15,7 +15,8 @@
     color: $primary;
     @include script-font;
     img {
-        max-height: 50vw;
+        max-width: 50vw;
+        height: auto;
     }
     &.active,
     &:active,
@@ -56,7 +57,8 @@
       -moz-transition: all 0.3s;
       transition: all 0.3s;
       img {
-        max-height: 50vw;
+        max-width: 50vw;
+        height: auto;
       }
     }
     .navbar-nav {
