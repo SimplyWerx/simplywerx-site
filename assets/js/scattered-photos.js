@@ -123,11 +123,13 @@
         createScatteredPhotos();
     }
 
+    /*
     // Refresh on window resize (debounced)
     let resizeTimeout;
     window.addEventListener('resize', function() {
         clearTimeout(resizeTimeout);
         resizeTimeout = setTimeout(createScatteredPhotos, 250);
     });
+    */
 
 })();
