@@ -17,23 +17,23 @@ en: &DEFAULT_EN
     buttonlink: "#services"
 
   services:
-    title: "Services"
-    text: "Lorem ipsum"
+    title: "What We Do"
+    text: "What we do at SimplyWerx"
     section: services
     list:
-      - title: "E-Commerce"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      - title: "Full‑Stack Electronics Engineering"
+        desc: "We deliver end‑to‑end electronics solutions that bridge hardware, firmware, and user experience. From system architecture and schematic design to PCB layout, fabrication, and testing, our expertise covers the full cycle. By integrating embedded firmware with intuitive interfaces, we ensure devices are both functional and engaging. Whether it’s a custom circuit board, a reliable embedded system, or a seamless digital interface, we combine engineering precision with creative design to turn concepts into robust, production‑ready applications."
         icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Responsive Design"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      - title: "Mechanical Engineering & Interactive Systems Design"
+        desc: "We deliver robust, user‑centric mechanical solutions that balance precision with durability. From CAD modeling and simulation to prototyping with 3D printing and CNC fabrication, our expertise covers the full development cycle. Specializing in museum‑grade interactive systems, we design visitor‑machine interfaces that are intuitive, resilient, and reliable under diverse conditions. By blending engineering rigor with creative design, we ensure every exhibit or device is mechanically sound, engaging, and accessible."
         icon: fas fa-laptop
-      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
-        desc: "Your description here, full **Markdown** support"
+      - title: "Full‑Stack Mobile App Development"
+        desc: "We specialize in building intuitive, reliable mobile applications that scale with your needs. From design to deployment, our team delivers native and cross‑platform apps with user‑friendly interfaces and rock‑solid performance. With more than 10 million downloads on Google Play, our apps have proven their quality in real‑world use. Whether consumer‑facing, exhibit companions, or enterprise solutions, we combine technical excellence with user‑centric design to bring your vision to life."
         icon: fab fa-markdown
 
   portfolio:
-    title: "Portfolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
+    title: "Recent Works"
+    text: "Some of our recent projects"
     section: portfolio
     closebutton: "Close Project"
 
@@ -69,9 +69,9 @@ en: &DEFAULT_EN
     end: "Be Part <br> of Our <br> Story!"
 
   about:
-    title: "About Us"
-    text: "our story"
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
+    title: "Team SimplyWerx"
+    text: "More about us"
+    body: "Team SimplyWerx is a cooperative of engineers, coders, builders, tinkerers, and designers led by Hon Tat Lau and Muliono Tanuwidjaja. Based in Singapore, we bring together over 40 years of combined experience at the crossroads of precision engineering, creative design, software and hardware development, and hands‑on prototyping.<br>Our passion is to bring ideas to life — from interactive exhibits and custom devices to permanent installations. With expertise spanning CAD, fabrication, onsite construction, and museum‑grade systems, we transform concepts into tangible experiences that are robust, intuitive, and inspiring."
     section: about
 
   clients:
