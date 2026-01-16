@@ -5,6 +5,11 @@
 # List of files to process (add your filenames here)
 FILES=(
   "20250323_212135.jpg"
+  "IMG-20250410-WA0000.jpg"
+  "IMG-20250918-WA0000.jpg"
+  "IMG-20250918-WA0000.jpg"
+  "IMG-20250929-WA0032.jpg"
+  "IMG-20251202-WA0005.jpg"
   #"IMG-20220617-WA0005.jpg"
   #"IMG-20230722-WA0001.jpg"
   # Add more filenames here
