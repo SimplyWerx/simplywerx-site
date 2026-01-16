@@ -16,6 +16,8 @@
     @include script-font;
     img {
         max-width: 55vw;
+        max-height: 10vh;
+        min-height: 40px;
         height: auto;
     }
     &.active,
@@ -58,6 +60,8 @@
       transition: all 0.3s;
       img {
         max-width: 55vw;
+        max-height: 10vh;
+        min-height: 40px;
         height: auto;
       }
     }
