@@ -22,14 +22,14 @@ en: &DEFAULT_EN
     section: services
     list:
       - title: "Full‑Stack Electronics Engineering"
-        desc: "We deliver end‑to‑end electronics solutions that bridge hardware, firmware, and user experience. From system architecture and schematic design to PCB layout, fabrication, and testing, our expertise covers the full cycle. By integrating embedded firmware with intuitive interfaces, we ensure devices are both functional and engaging. Whether it’s a custom circuit board, a reliable embedded system, or a seamless digital interface, we combine engineering precision with creative design to turn concepts into robust, production‑ready applications."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
+        desc: "We deliver end‑to‑end electronics solutions that bridge hardware, firmware, and user experience. From **system architecture** and **schematic design** to **PCB layout**, fabrication, and testing, our expertise covers the full cycle. By integrating embedded **firmware** with intuitive interfaces, we ensure devices are both functional and engaging. Whether it’s a **custom circuit board**, a reliable embedded system, or a seamless **digital interface**, we combine engineering precision with creative design to turn concepts into robust, production‑ready applications."
+        icon: fas fa-microchip #find more at https://fontawesome.com/icons
       - title: "Mechanical Engineering & Interactive Systems Design"
-        desc: "We deliver robust, user‑centric mechanical solutions that balance precision with durability. From CAD modeling and simulation to prototyping with 3D printing and CNC fabrication, our expertise covers the full development cycle. Specializing in museum‑grade interactive systems, we design visitor‑machine interfaces that are intuitive, resilient, and reliable under diverse conditions. By blending engineering rigor with creative design, we ensure every exhibit or device is mechanically sound, engaging, and accessible."
-        icon: fas fa-laptop
+        desc: "We deliver robust, user‑centric mechanical solutions that balance precision with durability. From **CAD modeling** and **simulation** to **prototyping** with **3D printing** and **CNC fabrication**, our expertise covers the full development cycle. Specializing in **museum‑grade** interactive systems, we design **visitor‑machine interfaces** that are intuitive, resilient, and reliable under diverse conditions. By blending engineering rigor with creative design, we ensure every exhibit or device is mechanically sound, engaging, and accessible."
+        icon: fas fa-robot
       - title: "Full‑Stack Mobile App Development"
-        desc: "We specialize in building intuitive, reliable mobile applications that scale with your needs. From design to deployment, our team delivers native and cross‑platform apps with user‑friendly interfaces and rock‑solid performance. With more than 10 million downloads on Google Play, our apps have proven their quality in real‑world use. Whether consumer‑facing, exhibit companions, or enterprise solutions, we combine technical excellence with user‑centric design to bring your vision to life."
-        icon: fab fa-markdown
+        desc: "We specialize in building intuitive, reliable **mobile applications** that scale with your needs. From design to deployment, our team delivers native and **cross‑platform** apps with **user‑friendly interfaces** and rock‑solid performance. With more than **10 million downloads on Google Play**, our apps have proven their quality in real‑world use. Whether consumer‑facing, exhibit companions, or enterprise solutions, we combine technical excellence with user‑centric design to bring your vision to life."
+        icon: fab fa-android
 
   portfolio:
     title: "Recent Works"
