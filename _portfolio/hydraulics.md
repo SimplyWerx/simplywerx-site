@@ -1,11 +1,11 @@
 ---
 caption:
   title: STEM - Hydraulics
-  subtitle: An hands-on exhibit that teaches kids about the power of hydraulics.
+  subtitle: A hands-on exhibit that teaches kids about the power of hydraulics.
   thumbnail: "assets/img/optimized-large/IMG-20250410-WA0000.jpg"
 
 title: STEM - Hydraulics
-subtitle: An hands-on exhibit that teaches kids about the power of hydraulics and their uses in modern machinery and robotics.
+subtitle: A hands-on exhibit that teaches kids about the power of hydraulics and their uses in modern machinery and robotics.
 image: "assets/img/optimized-large/IMG-20250410-WA0000.jpg"
 alt: Hydraulic robotic arm and grip
 

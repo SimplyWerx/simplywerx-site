@@ -1,7 +1,7 @@
 ---
 caption: #what displays in the portfolio grid:
   title: Autonomous Drone
-  subtitle: A custom All-In-One (AIO) drone flight controller for indoor flight choreography
+  subtitle: A custom drone flight controller for flight choreography
   thumbnail: "assets/img/originals/custom drone top.svg"
   
 #what displays when the item is clicked:
