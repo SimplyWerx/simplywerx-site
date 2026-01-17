@@ -131,7 +131,7 @@ en: &DEFAULT_EN
 
   contact:
     title: "Contact Us"
-    text: "Lorem ipsum or call 123456789"
+    text: 
     section: contact
     name: "Name*"
     name-validation: "Please enter your name."
@@ -143,6 +143,9 @@ en: &DEFAULT_EN
     message-validation: "Please enter a message."
     subject: "Contact Form Submission"
     submit: "Send Message"
+    success-message: "Your message has been sent. You can also send us a WhatsApp message at +65 8089 2976."
+    error-message: "Sorry {NAME}, there was an error: {ERROR}. Alternatively, you can reach us via WhatsApp at +65 8089 2976."
+    network-error-message: "Sorry {NAME}, it seems that the form service is not responding. Please try again later! Alternatively, you can reach us via WhatsApp at +65 8089 2976."
 
   footer:
     legal: "Privacy Policy"
