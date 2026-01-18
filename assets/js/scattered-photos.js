@@ -6,11 +6,13 @@
 (function() {
     'use strict';
 
+    // Adjust photo sizes for mobile
+    const isMobile = window.innerWidth <= 768;
+        
     // Configuration
     const config = {
-        photoCount: 48, // Number of photos to scatter
-        minSize: 160,   // Minimum photo size in pixels
-        maxSize: 320,   // Maximum photo size in pixels
+        minSize: isMobile ? 90 : 160,   // Minimum photo size in pixels
+        maxSize: isMobile ? 180 : 320,   // Maximum photo size in pixels
         parallaxEffect: true // Enable subtle parallax on scroll
     };
 
@@ -41,18 +43,30 @@
         // Clear existing photos
         container.innerHTML = '';
 
-        // Adjust photo count based on screen size
-        const isMobile = window.innerWidth <= 768;
-        const photoCount = isMobile ? Math.ceil(config.photoCount/1.5) : config.photoCount;
+        // Calculate grid based on mean photo size
+        const meanSize = (config.minSize + config.maxSize) / 2;
+        const headerWidth = header.offsetWidth;
+        const headerHeight = header.offsetHeight;
+        
+        // Calculate how many photos can fit in the grid (with some overlap/spacing factor)
+        const spacingFactor = 0.7; // Photos can overlap, so we use less space per photo
+        const cols = Math.max(3, Math.floor(headerWidth / (meanSize * spacingFactor)));
+        const rows = Math.max(3, Math.floor(headerHeight / (meanSize * spacingFactor)));
+        const photoCount = cols * rows;
         
         const selectedPhotos = getRandomPhotos(photoCount);
-        
-        // Calculate optimal grid dimensions based on photo count
         const actualPhotoCount = selectedPhotos.length;
-        const cols = Math.ceil(Math.sqrt(actualPhotoCount));
-        const rows = Math.ceil(actualPhotoCount / cols);
-        const cellWidth = 100 / cols;
-        const cellHeight = 100 / rows;
+        const cellWidth = headerWidth / cols;
+        const cellHeight = headerHeight / rows;
+        
+        // Create randomized grid positions
+        const totalGridCells = cols * rows;
+        const gridPositions = Array.from({length: totalGridCells}, (_, i) => i);
+        // Shuffle the grid positions
+        for (let i = gridPositions.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [gridPositions[i], gridPositions[j]] = [gridPositions[j], gridPositions[i]];
+        }
         
         selectedPhotos.forEach((photo, index) => {
             const photoElement = document.createElement('div');
@@ -61,8 +75,8 @@
             const size = getRandomInt(config.minSize, config.maxSize);
             const rotation = getRandomInt(-25, 25);
             
-            // Calculate grid position for more even distribution
-            const gridIndex = index % (cols * rows);
+            // Calculate grid position using randomized sequence
+            const gridIndex = gridPositions[index] % totalGridCells;
             const gridCol = gridIndex % cols;
             const gridRow = Math.floor(gridIndex / cols);
             
@@ -70,18 +84,18 @@
             // Start from the beginning of each grid cell and randomize position within it
             const basLeft = gridCol * cellWidth;
             const baseTop = gridRow * cellHeight;
-            const offsetLeft = getRandomInt(0, cellWidth * 0.6);
-            const offsetTop = getRandomInt(0, cellHeight * 0.6);
+            const offsetLeft = getRandomInt(-cellWidth * 0.6, cellWidth * 0.6);
+            const offsetTop = getRandomInt(-cellHeight * 0.6, cellHeight * 0.6);
             
-            const left = Math.max(1, Math.min(85, basLeft + offsetLeft));
-            const top = Math.max(1, Math.min(85, baseTop + offsetTop));
+            const left = Math.max(10, Math.min(headerWidth - size - 10, basLeft + offsetLeft));
+            const top = Math.max(10, Math.min(headerHeight - size - 10, baseTop + offsetTop));
             
             const delay = index * 50; // Stagger animation
             
             photoElement.style.width = `${size}px`;
             photoElement.style.height = `${size}px`;
-            photoElement.style.top = `${top}%`;
-            photoElement.style.left = `${left}%`;
+            photoElement.style.top = `${top}px`;
+            photoElement.style.left = `${left}px`;
             photoElement.style.transform = `rotate(${rotation}deg)`;
             photoElement.style.animationDelay = `${delay}ms`;
             
