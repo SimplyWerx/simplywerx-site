@@ -26,7 +26,7 @@ We created two versions of the Compass App, each powered by a different graphics
   <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" 
        alt="Get it on Google Play" 
        class="img-fluid" 
-       style="max-width: 300px;">
+       >
 </a>
 
 * A 3D version built on highly optimized OpenGL for immersive, dynamic rendering.
@@ -34,7 +34,7 @@ We created two versions of the Compass App, each powered by a different graphics
   <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" 
        alt="Get it on Google Play" 
        class="img-fluid" 
-       style="max-width: 300px;">
+       >
 </a>
 
 ## User Feedback

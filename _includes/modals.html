@@ -91,3 +91,59 @@
 {% endif %}
 {% endfor %}
 <!-- End Portfolio Modals -->
+
+<!-- Handle browser back button for modals -->
+<script>
+(function() {
+  console.log('Modal back button script loaded');
+  
+  // Wait for both DOM and scripts to be ready
+  window.addEventListener('load', function() {
+    console.log('Window loaded, checking for jQuery:', typeof jQuery !== 'undefined');
+    
+    if (typeof jQuery === 'undefined') {
+      console.error('jQuery not loaded!');
+      return;
+    }
+    
+    let modalIsOpen = false;
+    let currentModal = null;
+    
+    // Get all modals using jQuery
+    const $modals = jQuery('.portfolio-modal');
+    console.log('Found modals:', $modals.length);
+    
+    // Listen to modal events using jQuery
+    $modals.on('shown.bs.modal', function(e) {
+      console.log('Modal shown event fired');
+      if (!modalIsOpen) {
+        modalIsOpen = true;
+        currentModal = this;
+        history.pushState({modalOpen: true}, '');
+        console.log('Pushed history state');
+      }
+    });
+    
+    $modals.on('hide.bs.modal', function(e) {
+      console.log('Modal hide event fired');
+      if (modalIsOpen && !e.fromPopstate) {
+        modalIsOpen = false;
+        currentModal = null;
+        history.back();
+        console.log('Going back in history');
+      }
+    });
+    
+    // Listen for popstate (back button)
+    window.addEventListener('popstate', function(e) {
+      console.log('Popstate event fired, modalIsOpen:', modalIsOpen);
+      if (modalIsOpen && currentModal) {
+        modalIsOpen = false;
+        console.log('Closing modal from back button');
+        jQuery(currentModal).modal('hide');
+        currentModal = null;
+      }
+    });
+  });
+})();
+</script>

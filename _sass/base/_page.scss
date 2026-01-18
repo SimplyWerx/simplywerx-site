@@ -2,6 +2,7 @@
 body {
   overflow-x: hidden;
   @include body-font;
+  font-size: 18px; // Add this line for body text size
 }
 
 p {
@@ -37,7 +38,7 @@ h6 {
     margin-bottom: 15px;
   }
   h3.section-subheading {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     font-style: italic;
     margin-bottom: 75px;
