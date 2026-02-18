@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Privacy Policy
+description: "Read the SimplyWerx privacy policy, including data collection, analytics usage, and contact information for privacy-related inquiries."
 background: grey
 ---
 

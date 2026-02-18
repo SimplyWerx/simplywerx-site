@@ -16,13 +16,18 @@
 url: "https://simplywerx.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: ""
 
-title      : Team SimplyWerx
+title      : SimplyWerx Pte Ltd
 email      : feedback@simplywerx.com #this is also the email contact forms will go to
-description: "SimplyWerx official website"
-author     : "SimplyWerx"
-logo:     #optional, defaults to site title
-  path: assets\img\logo.png
-  height: 111 #height in px, defaults to 52px
+description: "SimplyWerx Pte Ltd designs and builds robust interactive exhibits, custom electronics, mechanical systems, and mobile apps for museums, education, and public spaces."
+tagline: "Robust interactive systems, built for real-world use"
+author     : "SimplyWerx Pte Ltd"
+logo: "/assets/img/logo.png" #used by jekyll-seo-tag and templates
+logo_height: 111 #height in px, defaults to 52px
+
+social:
+  name: SimplyWerx Pte Ltd
+  links:
+    - https://simplywerx.com
 
 locale: "en-US" # See available languages in _data/sitetext.yml
 
@@ -32,11 +37,22 @@ analytics:
 collections:
   portfolio:
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/logo.png
+  - scope:
+      path: ""
+      type: pages
+    values:
+      description: "SimplyWerx Pte Ltd builds reliable interactive systems, exhibits, and digital products for public-facing environments."
+
 markdown: kramdown
 
-# Uncomment following line to use Formspree form ID based URL instead of email based URL
-# Details: https://help.formspree.io/hc/en-us/articles/360017735154-How-to-prevent-spam
-# formspree_form_path: "f/a_form_id"
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Web3Forms Access Key for   form submissions
 web3forms_access_key: "9d6128c8-d6e9-4d6a-a8b8-983bd0b45e4d"
