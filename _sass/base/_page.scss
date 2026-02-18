@@ -2,11 +2,21 @@
 body {
   overflow-x: hidden;
   @include body-font;
-  font-size: 18px; // Add this line for body text size
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+  color: $gray-800;
 }
 
 p {
   line-height: 1.75;
+  margin-bottom: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 17px;
+  }
 }
 
 a {
@@ -27,20 +37,30 @@ h4,
 h5,
 h6 {
   font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
   @include heading-font;
 }
 
 .page-section {
   padding: 100px 0;
   h2.section-heading {
-    font-size: 40px;
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: 0.02em;
     margin-top: 0;
     margin-bottom: 15px;
   }
   h3.section-subheading {
-    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.7;
     font-weight: 400;
     font-style: italic;
+    color: $gray-700 !important;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 75px;
     text-transform: none;
     @include serif-font;
@@ -48,8 +68,12 @@ h6 {
 }
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 130px 0;
   }
+}
+
+.text-muted {
+  color: $gray-700 !important;
 }
 
 // Highlight color customization
