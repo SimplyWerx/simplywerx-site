@@ -2,9 +2,7 @@
 #mainNav {
   background-color: $gray-200;
   .navbar-toggler {
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
+    font-size: 12px;
     right: 0;
     padding: 13px;
     text-transform: uppercase;
@@ -32,11 +30,10 @@
   .navbar-nav {
     .nav-item {
       .nav-link {
-        font-size: 0.95rem;
-        font-weight: 600;
+        font-size: 90%;
+        font-weight: 400;
         padding: 0.75em 0;
-        letter-spacing: 0.04em;
-        line-height: 1.35;
+        letter-spacing: 1px;
         color: black;
         @include heading-font;
         &.active,

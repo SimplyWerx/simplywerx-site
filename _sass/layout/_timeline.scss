@@ -86,20 +86,8 @@
   .timeline-heading {
     h4 {
       margin-top: 0;
-      margin-bottom: 6px;
-      line-height: 1.3;
       color: inherit;
-
-      &:first-child {
-        font-size: 1.02rem;
-        font-weight: 700;
-        color: $gray-700;
-      }
-
       &.subheading {
-        font-size: 1.35rem;
-        font-weight: 700;
-        color: $gray-900;
         text-transform: none;
       }
     }
@@ -108,8 +96,6 @@
     > ul,
     > p {
       margin-bottom: 0;
-      font-size: 1rem;
-      line-height: 1.75;
     }
   }
 }
