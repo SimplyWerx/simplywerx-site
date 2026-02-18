@@ -2,11 +2,11 @@
 caption:
   title: Blast Off
   subtitle: An interactive exhibit on hydrolysis and combustion
-  thumbnail: "assets/img/optimized-large/IMG-20250209-WA0009.jpg"
+  thumbnail: "assets/img/optimized-large/Launch Pad.png"
 
 title: 3, 2, 1... Blast Off
 subtitle: An interactive exhibit on hydrolysis and combustion
-image: "assets/img/optimized-large/IMG-20250209-WA0009.jpg"
+image: "assets/img/optimized-large/Launch Pad.png"
 alt: Blast Off
 
 ---
