@@ -108,6 +108,24 @@
     
     let modalIsOpen = false;
     let currentModal = null;
+
+    function stopMediaPlayback(modalElement) {
+      if (!modalElement) {
+        return;
+      }
+
+      modalElement.querySelectorAll('video, audio').forEach(function(mediaElement) {
+        mediaElement.pause();
+        mediaElement.currentTime = 0;
+      });
+
+      modalElement.querySelectorAll('iframe').forEach(function(iframeElement) {
+        const currentSrc = iframeElement.getAttribute('src');
+        if (currentSrc) {
+          iframeElement.setAttribute('src', currentSrc);
+        }
+      });
+    }
     
     // Get all modals using jQuery
     const $modals = jQuery('.portfolio-modal');
@@ -126,6 +144,7 @@
     
     $modals.on('hide.bs.modal', function(e) {
       console.log('Modal hide event fired');
+      stopMediaPlayback(this);
       if (modalIsOpen && !e.fromPopstate) {
         modalIsOpen = false;
         currentModal = null;
