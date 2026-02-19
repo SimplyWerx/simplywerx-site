@@ -23,6 +23,9 @@ header.masthead {
       line-height: 27px;
       margin-bottom: 25px;
       @include heading-font;
+      p {
+        margin: 0;
+      }
     }
   }
 }
@@ -44,6 +47,9 @@ header.masthead {
         line-height: 50px;
         margin-bottom: 50px;
         @include heading-font;
+        p {
+          margin: 0;
+        }
       }
     }
   }
