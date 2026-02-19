@@ -15,7 +15,7 @@ We designed and built an all-in-one flight controller tailored for autonomous an
 
 To enable precise indoor navigation, the controller incorporates Decawave (Qorvo) UWB chipsets supporting Time Difference of Arrival (TDOA) positioning. It is engineered to work seamlessly with miniature off-the-shelf brushless motors, making it versatile and cost-efficient for performance applications.
 
-<img src="assets/img/optimized-large/20250323_212135.jpg" alt="Alt text" class="img-fluid w-75">
+<img src="assets/img/optimized-large/20250323_212135.jpg" alt="Custom autonomous drone flight controller circuit board" class="img-fluid w-75">
 
 A variation of this controller was deployed in the Robot Theatre at Science Centre Singapore, where it powered a tethered autonomous drone. Its choreography was synchronized with the show, demonstrating how the system combines engineering precision with creative performance in a live interactive environment.
 

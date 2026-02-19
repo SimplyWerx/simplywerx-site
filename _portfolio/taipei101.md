@@ -13,7 +13,7 @@ alt: Taipei 101
 
 Visitors turn a knob to adjust the position of a spherical mass damper inside a Taipei 101 building model. A simulated earthquake then shakes the structure, allowing visitors to observe how different damper settings affect building motion. An accompanying screen provides guided instructions and clear scientific explanations throughout the experience.
 
-<img src="assets/img/optimized-large/Taipei 101 - 8.png" alt="Alt text" class="img-fluid w-75">
+<img src="assets/img/optimized-large/Taipei 101 - 8.png" alt="Taipei 101 Damper Challenge exhibit with building model and control panel" class="img-fluid w-75">
 
 This interactive combines industrial-grade motion actuators with precise motion-control programming to deliver reliable, repeatable demonstrations in a public setting. It simplifies a complex structural engineering concept into an intuitive, hands-on activity that helps visitors understand how smart design improves earthquake resilience.
 
