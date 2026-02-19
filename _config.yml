@@ -33,7 +33,7 @@ locale: "en-US" # See available languages in _data/sitetext.yml
 
 analytics:
   google: G-B0B85PYNQH
-  uet: YOUR_UET_TAG_ID
+  uet: 343235195
 
 collections:
   portfolio:
