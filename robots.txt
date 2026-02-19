@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /assets/img/originals/
+Disallow: /gen-optimize-large.sh
+Disallow: /gen-optimize-large-some.sh
+Disallow: /gen-optimize-small.sh
 
 Sitemap: https://simplywerx.com/sitemap.xml
