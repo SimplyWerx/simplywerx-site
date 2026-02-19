@@ -5,7 +5,7 @@
           {%- if site.logo -%}
             {%- assign logo_src = site.logo.path | default: site.logo -%}
             {%- assign logo_height = site.logo.height | default: site.logo_height | default: 52 -%}
-            <img height="{{ logo_height }}" src="{{ logo_src }}"/>
+            <img height="{{ logo_height }}" src="{{ logo_src }}" alt="{{ site.title }}"/>
           {%- else -%}
             {{ site.title }}
           {%- endif -%}

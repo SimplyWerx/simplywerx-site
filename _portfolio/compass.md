@@ -13,11 +13,11 @@ alt: Compass Steel app icon
 
 We designed and developed a sleek mobile compass application that combines precision engineering with intuitive design. Built for accurate directional readings, the app integrates smartphone sensor data and presents it through a clean, minimal interface.
 
-<img src="assets/img/optimized-large/pixel_6_rich_in_features_screenshot_en_US.png" alt="Alt text" class="img-fluid w-60">
+<img src="assets/img/optimized-large/pixel_6_rich_in_features_screenshot_en_US.png" alt="Compass Steel app screenshot showing rich features and precision readings" class="img-fluid w-60">
 
 With elegant visuals and responsive performance, Compass Steel quickly became a popular tool for everyday navigation, offering users both reliability and style. By blending technical accuracy with thoughtful UX, it demonstrates our ability to build mobile products that are both functional and engaging.
 
-<img src="assets/img/optimized-large/pixel_6_sun_moon_screenshot_en_US.png" alt="Alt text" class="img-fluid w-60">
+<img src="assets/img/optimized-large/pixel_6_sun_moon_screenshot_en_US.png" alt="Compass Steel app screenshot displaying sun and moon positions" class="img-fluid w-60">
 
 We released two versions of Compass Steel, each powered by a different graphics engine:
 
