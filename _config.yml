@@ -32,7 +32,7 @@ social:
 locale: "en-US" # See available languages in _data/sitetext.yml
 
 analytics:
-  google: #Google Analytics tracking code here
+  google: G-B0B85PYNQH
 
 collections:
   portfolio:
