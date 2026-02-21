@@ -9,6 +9,10 @@ $(function() {
     },
     submitSuccess: function($form, event) {
       event.preventDefault(); // prevent default submit behaviour
+      // Track conversion when submit button is clicked
+      if (typeof gtag_report_conversion === 'function') {
+        gtag_report_conversion();
+      }
       // get values from FORM
       var accessKey = $("input[name='access_key']").val();
       var name = $("input#name").val();

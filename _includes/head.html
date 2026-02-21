@@ -28,6 +28,20 @@
       });
       return false;
     }
+    // Google Ads conversion tracking function
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof url === 'string') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': '{{ site.analytics.google }}',
+        'event_callback': callback,
+        'event_timeout': 2000,
+      });
+      return false;
+    }
   </script>
   <!-- End Google Analytics -->
   {% endif %}
