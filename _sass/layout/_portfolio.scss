@@ -21,21 +21,26 @@
         left: 0;
         width: 100%;
         height: 100%;
+        z-index: 1;
         object-fit: cover;
         display: block;
+        -webkit-transition: transform ease 0.5s;
+        -moz-transition: transform ease 0.5s;
+        transition: transform ease 0.5s;
       }
       .portfolio-hover {
         position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
+        z-index: 2;
+        pointer-events: none;
         -webkit-transition: all ease 0.5s;
         -moz-transition: all ease 0.5s;
         transition: all ease 0.5s;
         opacity: 0;
         background: fade-out($primary, 0.1);
-        &:hover {
-          opacity: 1;
-        }
         .portfolio-hover-content {
           font-size: 20px;
           position: absolute;
@@ -53,6 +58,23 @@
             margin: 0;
           }
         }
+      }
+
+      &:hover .portfolio-hover,
+      &:focus-visible .portfolio-hover,
+      &:active .portfolio-hover {
+        opacity: 1;
+      }
+
+      &:hover img,
+      &:focus-visible img,
+      &:active img {
+        transform: scale(1.05);
+      }
+
+      &:focus-visible {
+        outline: 2px solid $white;
+        outline-offset: 2px;
       }
     }
     .portfolio-caption {
@@ -72,10 +94,43 @@
       }
     }
   }
-  * {
-    z-index: 2;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #portfolio {
+    .portfolio-item {
+      .portfolio-link {
+        .portfolio-hover {
+          opacity: 0;
+        }
+      }
+    }
   }
 }
+
+@media (hover: none), (pointer: coarse) {
+  #portfolio {
+    .portfolio-item {
+      .portfolio-link {
+        .portfolio-hover {
+          opacity: 0.65;
+        }
+
+        .portfolio-hover .portfolio-hover-content {
+          top: auto;
+          bottom: 16px;
+          margin-top: 0;
+          height: auto;
+        }
+
+        &:active img {
+          transform: scale(1.03);
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 767px) {
   #portfolio {
     .portfolio-item {
