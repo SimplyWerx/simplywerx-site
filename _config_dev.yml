@@ -22,7 +22,7 @@ description: "SimplyWerx Pte Ltd designs and builds robust interactive exhibits,
 tagline: "Robust interactive systems, built for real-world use"
 author     : "SimplyWerx Pte Ltd"
 logo: "/assets/img/logo.png" #used by jekyll-seo-tag and templates
-logo_height: 111 #height in px, defaults to 52px
+logo_height: 180 #height in px, defaults to 52px
 
 social:
   name: SimplyWerx Pte Ltd
