@@ -60,20 +60,6 @@
         }
       }
 
-      &:hover .portfolio-hover,
-      &:focus-visible .portfolio-hover {
-        opacity: 1;
-      }
-
-      &:hover img,
-      &:focus-visible img {
-        transform: scale(1.05);
-      }
-
-      &:focus-visible {
-        outline: 2px solid $white;
-        outline-offset: 2px;
-      }
     }
     .portfolio-caption {
       max-width: 400px;
@@ -89,6 +75,50 @@
         font-style: italic;
         margin: 0;
         @include serif-font;
+      }
+    }
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #portfolio {
+    .portfolio-item {
+      .portfolio-link {
+        &:hover .portfolio-hover,
+        &:focus-visible .portfolio-hover {
+          opacity: 1;
+        }
+
+        &:hover img,
+        &:focus-visible img {
+          transform: scale(1.05);
+        }
+
+        &:focus-visible {
+          outline: 2px solid $white;
+          outline-offset: 2px;
+        }
+      }
+    }
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  #portfolio {
+    .portfolio-item {
+      .portfolio-link {
+        .portfolio-hover {
+          opacity: 0;
+        }
+
+        img {
+          transform: none;
+        }
+
+        &:focus,
+        &:focus-visible {
+          outline: none;
+        }
       }
     }
   }
