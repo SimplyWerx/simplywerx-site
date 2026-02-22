@@ -9,10 +9,6 @@ $(function() {
     },
     submitSuccess: function($form, event) {
       event.preventDefault(); // prevent default submit behaviour
-      // Track conversion when submit button is clicked
-      if (typeof gtag_report_conversion === 'function') {
-        gtag_report_conversion();
-      }
       // get values from FORM
       var accessKey = $("input[name='access_key']").val();
       var name = $("input#name").val();
@@ -48,6 +44,12 @@ $(function() {
 
         success: function(response) {
           if (response.success) {
+            // Track conversion only after successful form submission
+            if (typeof gtagSendEvent === 'function') {
+              gtagSendEvent();
+            } else if (typeof gtag === 'function') {
+              gtag('event', 'conversion_event_submit_lead_form');
+            }
             // Success message
             $('#success').html("<div class='alert alert-success'>");
             $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
