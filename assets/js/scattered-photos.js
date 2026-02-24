@@ -11,8 +11,8 @@
         
     // Configuration
     const config = {
-        minSize: isMobile ? 160 : 280,   // Minimum photo size in pixels
-        maxSize: isMobile ? 180 : 320,   // Maximum photo size in pixels
+        minSize: isMobile ? 130 : 280,   // Minimum photo size in pixels
+        maxSize: isMobile ? 160 : 320,   // Maximum photo size in pixels
         parallaxEffect: true // Enable subtle parallax on scroll
     };
 
