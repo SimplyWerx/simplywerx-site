@@ -18,8 +18,8 @@ baseurl: ""
 
 title      : SimplyWerx Pte Ltd
 email      : feedback@simplywerx.com #this is also the email contact forms will go to
-description: "SimplyWerx Pte Ltd designs and builds robust interactive exhibits, custom electronics, mechanical systems, and mobile apps for museums, education, and public spaces."
-tagline: "Robust interactive systems, built for real-world use"
+description: "SimplyWerx Pte Ltd is a technology and custom hardware partner for exhibit builders, supplying reliable electronics, mechanical systems, and control software for interactive installations."
+tagline: "Technology and custom hardware for exhibit builders"
 author     : "SimplyWerx Pte Ltd"
 logo: "/assets/img/logo.png" #used by jekyll-seo-tag and templates
 logo_height: 180 #height in px, defaults to 52px
@@ -47,7 +47,7 @@ defaults:
       path: ""
       type: pages
     values:
-      description: "SimplyWerx Pte Ltd builds reliable interactive systems, exhibits, and digital products for public-facing environments."
+      description: "SimplyWerx Pte Ltd partners with exhibit builders to deliver reliable interactive systems, custom hardware, and software for public-facing environments."
 
 markdown: kramdown
 

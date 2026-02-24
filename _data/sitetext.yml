@@ -11,24 +11,24 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: "You dream it. We bring it to life."
-    text: "Engineering creativity into reality:<br>devices, apps, and experiences that inspire and engage."
-    button: Tell Me More
+    title: "Your exhibit vision. Our technology backbone."
+    text: "A trusted technology and custom hardware partner for exhibit builders.<br>We supply the electronics, mechanisms, and software behind reliable interactive experiences."
+    button: Explore Services
     buttonlink: "#services"
 
   services:
-    title: "What We Do"
-    text: "From concept to deployment, we design and build integrated hardware, software, and interactive experiences."
+    title: "How We Support Exhibit Builders"
+    text: "We help exhibit studios and fabricators deliver dependable interactives with custom electronics, mechanical systems, and control software that integrate smoothly into your builds."
     section: services
     list:
-      - title: "Full‑Stack Electronics Engineering"
-        desc: "We engineer the electronics behind responsive interactives, from sensors and control systems to embedded logic and interfaces. From **system architecture** and **schematic design** to **PCB layout**, fabrication, and validation, we deliver complete platforms that respond smoothly, recover quickly, and run reliably throughout daily public operation."
+      - title: "Custom Electronics Engineering"
+        desc: "We engineer the electronics behind responsive interactives, from sensors and control systems to embedded logic and interfaces. From **system architecture** and **schematic design** to **PCB layout**, fabrication, and validation, we deliver reliable subsystems your team can integrate with confidence."
         icon: fas fa-microchip #find more at https://fontawesome.com/icons
-      - title: "Mechanical Engineering & Interactive Systems Design"
-        desc: "We design and build the physical layer of interactive installations so they feel intuitive and hold up under heavy use. Using **CAD modeling**, **simulation**, and rapid prototyping with **3D printing** and **CNC fabrication**, we produce museum-grade mechanisms and touchpoints that are precise, safe, and built for repeated interaction."
+      - title: "Mechanical Engineering for Interactive Mechanisms"
+        desc: "We design and build the physical layer of interactive installations so they feel intuitive and hold up under heavy use. Using **CAD modeling**, **simulation**, and rapid prototyping with **3D printing** and **CNC fabrication**, we deliver robust mechanisms and assemblies ready for real-world operation."
         icon: fas fa-robot
-      - title: "Full‑Stack Mobile App Development"
-        desc: "We build intuitive, scalable **mobile applications** from product design to release. Our team delivers native and **cross‑platform** apps with clean user flows and dependable performance. With over **10 million Google Play downloads**, our products are proven in real‑world use across consumer, exhibit companion, and enterprise applications."
+      - title: "Control Software & Mobile App Development"
+        desc: "We build intuitive, scalable **control software** and **mobile applications** that complement your exhibits and installations. Our team delivers native and **cross‑platform** apps with dependable performance, plus clear handover documentation for your operations team."
         icon: fab fa-android
 
   portfolio:
@@ -39,8 +39,8 @@ en: &DEFAULT_EN
 
   about:
     title: "Team SimplyWerx"
-    text: "The people behind the work"
-    body: "SimplyWerx is a close‑knit team of engineers, makers, and designers led by Hon Tat Lau and Muliono Tanuwidjaja. We’re based in Singapore, and between us we bring more than 40 years of hands‑on experience turning rough ideas into things people can see, touch, and use.<br>We’re not a hobbyist or DIY maker setup. Our installations are engineered for demanding, real‑world environments — robust, production‑grade, and battle‑tested through repeated public use. Clients trust us because we combine practical problem‑solving with disciplined execution from first sketch to final handover, designing every system for easy maintenance, high uptime, and minimal downtime."
+    text: "Your specialist technology partner"
+    body: "SimplyWerx is a close‑knit team of engineers, makers, and designers led by Hon Tat Lau and Muliono Tanuwidjaja. We’re based in Singapore, and between us we bring more than 40 years of hands‑on experience delivering robust interactive technology.<br>We collaborate with exhibit builders, studios, and fabricators as a specialist supplier — not a replacement for your creative or fabrication role. Our systems are engineered for demanding public environments and handed over with practical documentation to support high uptime, easy maintenance, and smooth long-term operation."
     section: about
 
   contact:

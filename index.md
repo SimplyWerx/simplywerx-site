@@ -1,5 +1,5 @@
 ---
 layout: home
-title: "Interactive Exhibit Engineering by SimplyWerx"
-description: "SimplyWerx Pte Ltd creates battle-tested interactive exhibits, custom hardware, and mobile experiences engineered for high uptime in real-world public environments."
+title: "Technology Partner for Exhibit Builders | SimplyWerx"
+description: "SimplyWerx Pte Ltd partners with exhibit builders to supply custom electronics, mechanical systems, and control software for reliable interactive installations in public environments."
 ---
