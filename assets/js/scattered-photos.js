@@ -11,7 +11,7 @@
         
     // Configuration
     const config = {
-        minSize: isMobile ? 90 : 160,   // Minimum photo size in pixels
+        minSize: isMobile ? 160 : 280,   // Minimum photo size in pixels
         maxSize: isMobile ? 180 : 320,   // Maximum photo size in pixels
         parallaxEffect: true // Enable subtle parallax on scroll
     };
@@ -49,7 +49,7 @@
         const headerHeight = header.offsetHeight;
         
         // Calculate how many photos can fit in the grid (with some overlap/spacing factor)
-        const spacingFactor = 0.7; // Photos can overlap, so we use less space per photo
+        const spacingFactor = 0.9; // Photos can overlap, so we use less space per photo
         const cols = Math.max(3, Math.floor(headerWidth / (meanSize * spacingFactor)));
         const rows = Math.max(3, Math.floor(headerHeight / (meanSize * spacingFactor)));
         const photoCount = cols * rows;
@@ -84,8 +84,8 @@
             // Start from the beginning of each grid cell and randomize position within it
             const basLeft = gridCol * cellWidth;
             const baseTop = gridRow * cellHeight;
-            const offsetLeft = getRandomInt(-cellWidth * 0.6, cellWidth * 0.6);
-            const offsetTop = getRandomInt(-cellHeight * 0.6, cellHeight * 0.6);
+            const offsetLeft = getRandomInt(-cellWidth * 0.2, cellWidth * 0.2);
+            const offsetTop = getRandomInt(-cellHeight * 0.2, cellHeight * 0.2);
             
             const left = Math.max(10, Math.min(headerWidth - size - 10, basLeft + offsetLeft));
             const top = Math.max(10, Math.min(headerHeight - size - 10, baseTop + offsetTop));

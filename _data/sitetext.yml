@@ -11,8 +11,8 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: "Your exhibit vision. Our technology backbone."
-    text: "A trusted technology and custom hardware partner for exhibit builders.<br>We supply the electronics, mechanisms, and software behind reliable interactive experiences."
+    title: "You dream it. We bring it to life."
+    text: "Technology and custom hardware for exhibit builders.<br>We supply the electronics, mechanisms, and software behind reliable interactive experiences."
     button: Explore Services
     buttonlink: "#services"
 
