@@ -33,6 +33,7 @@ $contact-image: "{{ site.data.style.contact-image }}";
 @import "components/navbar.scss";
 @import "components/client-scroll.scss";
 @import "components/scattered-photos.scss";
+@import "components/whatsapp-float.scss";
 
 // Layout
 @import "layout/masthead.scss";

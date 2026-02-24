@@ -7,6 +7,18 @@
 
       {{ content }}
 
+			{% assign whatsapp_number = site.whatsapp_number | default: "6580892976" %}
+			{% assign whatsapp_message = site.whatsapp_message | default: "Hi, I would like to discuss a project." | uri_escape %}
+			<a
+				class="whatsapp-float"
+				href="https://wa.me/{{ whatsapp_number }}?text={{ whatsapp_message }}"
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label="Chat with us on WhatsApp"
+			>
+				<i class="fab fa-whatsapp"></i>
+			</a>
+
 	  {% include footer.html %}
 
 	  <!-- Bootstrap core JavaScript -->

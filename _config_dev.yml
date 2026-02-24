@@ -56,3 +56,7 @@ plugins:
 
 # Web3Forms Access Key for   form submissions
 web3forms_access_key: "9d6128c8-d6e9-4d6a-a8b8-983bd0b45e4d"
+
+# WhatsApp CTA
+whatsapp_number: "6580892976"
+whatsapp_message: "Hi SimplyWerx, I would like to discuss a project."
