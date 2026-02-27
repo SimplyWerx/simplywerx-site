@@ -50,6 +50,10 @@ $(function() {
             } else if (typeof gtag === 'function') {
               gtag('event', 'conversion_event_submit_lead_form');
             }
+            // track conversion for Microsoft UET
+            if (typeof uet_report_conversion === 'function') {
+              uet_report_conversion();
+            }
             // Success message
             $('#success').html("<div class='alert alert-success'>");
             $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
