@@ -145,3 +145,4 @@ xandr.com, 15840, RESELLER
 xandr.com, 17779, RESELLER
 zetaglobal.net, 630, RESELLER
 zmaticoo.com, 5135195, RESELLER
+adingo.jp, 34384, RESELLER
