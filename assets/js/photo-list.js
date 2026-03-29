@@ -10,7 +10,7 @@ const PHOTO_LIST = [
 {%- for static_file in site.static_files -%}
   {%- if static_file.path contains photo_dir -%}
     {%- assign filename = static_file.path | split: '/' | last -%}
-    {%- if filename contains '.jpg' or filename contains '.jpeg' or filename contains '.png' -%}
+    {%- if filename contains '.webp' -%}
   "{{ filename }}",
     {%- endif -%}
   {%- endif -%}

@@ -2,7 +2,7 @@
 caption:
   title: Taipei 101 Damper Challenge
   subtitle: An interactive exhibit on how tuned mass dampers reduce building sway
-  thumbnail: "assets/img/optimized-large/Taipei 101 - 11.png"
+  thumbnail: "assets/img/optimized-small/Taipei 101 - 11.webp"
 
 title: Taipei 101 Damper Challenge
 subtitle: An interactive exhibit on how tuned mass dampers reduce building sway
@@ -17,8 +17,8 @@ Visitors turn a knob to adjust the position of a spherical mass damper inside a 
 
 This interactive combines industrial-grade motion actuators with precise motion-control programming to deliver reliable, repeatable demonstrations in a public setting. It simplifies a complex structural engineering concept into an intuitive, hands-on activity that helps visitors understand how smart design improves earthquake resilience.
 
-<video controls style="max-width: 600px; width: 100%; max-height: 600px; height: 100%;" preload="metadata">
-  <source src="assets/video/Taipei 101 - Shake Table Mechanism_low_res.mp4" type="video/mp4">
+<video controls style="max-width: 600px; width: 100%; max-height: 600px; height: 100%;" preload="none">
+  <source data-src="assets/video/Taipei 101 - Shake Table Mechanism_low_res.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 

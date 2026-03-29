@@ -12,13 +12,13 @@
 en: &DEFAULT_EN
   header:
     title: "You dream it. We bring it to life."
-    text: "Technology and custom hardware for exhibit builders.<br>We supply the electronics, mechanisms, and software behind reliable interactive experiences."
+    text: "Technology and custom hardware for interactive exhibits.<br>We supply the electronics, mechanisms, and software behind reliable interactive experiences."
     button: Explore Services
     buttonlink: "#services"
 
   services:
-    title: "How We Support Exhibit Builders"
-    text: "We help exhibit studios and fabricators deliver dependable interactives with custom electronics, mechanical systems, and control software that integrate smoothly into your builds."
+    title: "How We Support Designers"
+    text: "We help design studios and fabricators deliver dependable interactives with custom electronics, mechanical systems, and control software that integrate smoothly into your builds."
     section: services
     list:
       - title: "Custom Electronics Engineering"
@@ -40,7 +40,7 @@ en: &DEFAULT_EN
   about:
     title: "Team SimplyWerx"
     text: "Your specialist technology partner"
-    body: "SimplyWerx is a close‑knit team of engineers, makers, and designers led by Hon Tat Lau and Muliono Tanuwidjaja. We’re based in Singapore, and between us we bring more than 40 years of hands‑on experience delivering robust interactive technology.<br>We collaborate with exhibit builders, studios, and fabricators as a specialist supplier — not a replacement for your creative or fabrication role. Our systems are engineered for demanding public environments and handed over with practical documentation to support high uptime, easy maintenance, and smooth long-term operation."
+    body: "SimplyWerx is a close‑knit team of engineers, makers, and designers led by Hon Tat Lau and Muliono Tanuwidjaja. We’re based in Singapore, and between us we bring more than 40 years of hands‑on experience delivering robust interactive technology.<br>We collaborate with design studios and fabricators as a specialist supplier. Our systems are engineered for demanding public environments and handed over with practical documentation to support high uptime, easy maintenance, and smooth long-term operation."
     section: about
 
   contact:

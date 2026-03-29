@@ -26,6 +26,8 @@
                 class="img-fluid d-block mx-auto"
                 src="{{ project.image }}"
                 alt="{{ project.alt }}"
+                loading="lazy"
+                decoding="async"
               />
               <p>{{ project.content }}</p>
               <button
@@ -70,6 +72,8 @@
                 class="img-fluid d-block mx-auto"
                 src="{{ project.image }}"
                 alt="{{ project.alt }}"
+                loading="lazy"
+                decoding="async"
               />
               <p>{{ project.content }}</p>
               <button
@@ -109,6 +113,26 @@
     let modalIsOpen = false;
     let currentModal = null;
 
+    function loadDeferredMedia(modalElement) {
+      if (!modalElement) {
+        return;
+      }
+
+      modalElement.querySelectorAll('video, audio').forEach(function(mediaElement) {
+        let shouldLoad = false;
+        mediaElement.querySelectorAll('source[data-src]').forEach(function(sourceElement) {
+          if (!sourceElement.getAttribute('src')) {
+            sourceElement.setAttribute('src', sourceElement.getAttribute('data-src'));
+            shouldLoad = true;
+          }
+        });
+
+        if (shouldLoad) {
+          mediaElement.load();
+        }
+      });
+    }
+
     function stopMediaPlayback(modalElement) {
       if (!modalElement) {
         return;
@@ -117,6 +141,18 @@
       modalElement.querySelectorAll('video, audio').forEach(function(mediaElement) {
         mediaElement.pause();
         mediaElement.currentTime = 0;
+
+        let shouldUnload = false;
+        mediaElement.querySelectorAll('source[data-src]').forEach(function(sourceElement) {
+          if (sourceElement.getAttribute('src')) {
+            sourceElement.removeAttribute('src');
+            shouldUnload = true;
+          }
+        });
+
+        if (shouldUnload) {
+          mediaElement.load();
+        }
       });
 
       modalElement.querySelectorAll('iframe').forEach(function(iframeElement) {
@@ -134,6 +170,7 @@
     // Listen to modal events using jQuery
     $modals.on('shown.bs.modal', function(e) {
       console.log('Modal shown event fired');
+      loadDeferredMedia(this);
       if (!modalIsOpen) {
         modalIsOpen = true;
         currentModal = this;

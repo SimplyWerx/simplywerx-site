@@ -2,7 +2,7 @@
 caption:
   title: Cycling with Skeleton
   subtitle: A synchronized cycling exhibit that brings anatomy to life
-  thumbnail: "assets/img/optimized-large/Cycling with Skeleton.png"
+  thumbnail: "assets/img/optimized-small/Cycling with Skeleton.webp"
 
 title: Cycling with Skeleton
 subtitle: A synchronized cycling exhibit that brings anatomy to life
@@ -19,8 +19,8 @@ Children pedal on a stationary bike positioned beside a second bike fitted with 
 
 A scrolling animated background on a large display creates the feeling of movement and turns the setup into a highly engaging, camera-friendly experience. The exhibit combines play with science communication, helping young visitors connect body mechanics, motion, and coordination through direct interaction.
 
-<video controls style="max-width: 600px; width: 100%; max-height: 600px; height: 100%;" preload="metadata">
-  <source src="assets/video/Cycling with Skeleton_low_res.mp4" type="video/mp4">
+<video controls style="max-width: 600px; width: 100%; max-height: 600px; height: 100%;" preload="none">
+  <source data-src="assets/video/Cycling with Skeleton_low_res.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 

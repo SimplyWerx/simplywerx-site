@@ -2,7 +2,7 @@
 caption:
   title: Generator Race
   subtitle: A competitive electromechanical exhibit on energy conversion
-  thumbnail: "assets/img/optimized-large/IMG-20240618-WA0000.jpg"
+  thumbnail: "assets/img/optimized-small/IMG-20240618-WA0000.webp"
 
 title: Generating Electrical Energy
 subtitle: Visitors generate electrical energy by spinning a barrel linked to a dynamo.

@@ -2,7 +2,7 @@
 caption:
   title: Hydraulic Arm Challenge
   subtitle: A hands-on exhibit that introduces hydraulics through robotic control
-  thumbnail: "assets/img/optimized-large/IMG-20250410-WA0000.jpg"
+  thumbnail: "assets/img/optimized-small/IMG-20250410-WA0000.webp"
 
 title: Hydraulic Arm Challenge
 subtitle: A hands-on exhibit that introduces hydraulics through robotic control

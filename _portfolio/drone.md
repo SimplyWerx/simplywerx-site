@@ -2,7 +2,7 @@
 caption: #what displays in the portfolio grid:
   title: Autonomous Drone Controller
   subtitle: A custom flight controller for indoor autonomous choreography
-  thumbnail: "assets/img/originals/custom drone top.svg"
+  thumbnail: "assets/img/optimized-small/custom drone top.jpg"
   
 #what displays when the item is clicked:
 title: Autonomous Drone Flight Controller
@@ -19,8 +19,8 @@ To enable precise indoor navigation, the controller incorporates Decawave (Qorvo
 
 A variation of this controller was deployed in the Robot Theatre at Science Centre Singapore, where it powered a tethered autonomous drone. Its choreography was synchronized with the show, demonstrating how the system combines engineering precision with creative performance in a live interactive environment.
 
-<video controls style="max-width: 600px; width: 100%; max-height: 600px; height: 100%;" preload="metadata">
-  <source src="assets/video/Robot Theatre Drone_low_res.mp4" type="video/mp4">
+<video controls style="max-width: 600px; width: 100%; max-height: 600px; height: 100%;" preload="none">
+  <source data-src="assets/video/Robot Theatre Drone_low_res.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 

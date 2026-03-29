@@ -2,7 +2,7 @@
 caption:
   title: Compass Steel App
   subtitle: A precision mobile compass app with elegant design
-  thumbnail: "assets/img/optimized-large/steel_compass_steel_black_en_US_transparent.png"
+  thumbnail: "assets/img/optimized-small/steel_compass_steel_black_en_US_transparent.webp"
 
 title: Compass Steel App
 subtitle: A precision mobile compass app on Google Play

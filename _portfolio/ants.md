@@ -2,7 +2,7 @@
 caption:
   title: Move The Balls
   subtitle: A hands-on electromechanical exhibit on motion and control
-  thumbnail: "assets/img/optimized-large/IMG-20231020-WA0002.jpg"
+  thumbnail: "assets/img/optimized-small/IMG-20231020-WA0002.webp"
 
 title: Move The Balls
 subtitle: Visitors guide balls through a dynamic course using electromechanical controls.
