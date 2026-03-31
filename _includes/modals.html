@@ -4,6 +4,7 @@
 <div
   class="portfolio-modal modal fade"
   id="p{{ forloop.index }}"
+  data-project-slug="{{ project.slug | slugify }}"
   tabindex="-1"
   role="dialog"
   aria-hidden="true"
@@ -50,6 +51,7 @@
 <div
   class="portfolio-modal modal fade"
   id="p{{ forloop.index }}"
+  data-project-slug="{{ project.slug | slugify }}"
   tabindex="-1"
   role="dialog"
   aria-hidden="true"
@@ -112,6 +114,24 @@
     
     let modalIsOpen = false;
     let currentModal = null;
+
+    function getModalFromUrl() {
+      const queryParams = new URLSearchParams(window.location.search);
+      const requestedSlug = (queryParams.get('openModal') || queryParams.get('modal') || '').toLowerCase();
+
+      if (requestedSlug) {
+        return Array.from(document.querySelectorAll('.portfolio-modal')).find(function(modalElement) {
+          return (modalElement.getAttribute('data-project-slug') || '').toLowerCase() === requestedSlug;
+        }) || null;
+      }
+
+      const modalHash = window.location.hash;
+      if (/^#p\d+$/.test(modalHash)) {
+        return document.querySelector(modalHash);
+      }
+
+      return null;
+    }
 
     function loadDeferredMedia(modalElement) {
       if (!modalElement) {
@@ -200,6 +220,18 @@
         currentModal = null;
       }
     });
+
+    const initialModal = getModalFromUrl();
+    if (initialModal) {
+      const portfolioSection = document.getElementById('portfolio');
+      if (portfolioSection) {
+        portfolioSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+
+      setTimeout(function() {
+        jQuery(initialModal).modal('show');
+      }, 200);
+    }
   });
 })();
 </script>
