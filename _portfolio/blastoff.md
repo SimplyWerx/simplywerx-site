@@ -17,11 +17,7 @@ Visitors spin a handwheel to supply the electrical energy for hydrolysis, produc
 
 Designed to be both educational and exciting, Blast Off turns abstract chemistry and physics into a hands-on experience. By combining safe experimentation with interactive play, it helps learners understand how energy conversion and chemical reactions power modern rocketry.
 
-<video controls style="max-width: 600px; width: 100%; max-height: 600px; height: 100%;" preload="none">
-  <source data-src="assets/video/Rocket Deployment Slow-Mo Combined_low_res.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
+<iframe width="100%" height="600" src="https://www.youtube.com/embed/YwnQw59oi0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-fullscreen" allowfullscreen></iframe>
 
 {:.list-inline}
 
