@@ -11,13 +11,28 @@
 			{% assign whatsapp_message = site.whatsapp_message | default: "Hi, I would like to discuss a project." | uri_escape %}
 			<a
 				class="whatsapp-float"
+				id="whatsapp-float"
 				href="https://wa.me/{{ whatsapp_number }}?text={{ whatsapp_message }}"
 				target="_blank"
 				rel="noopener noreferrer"
 				aria-label="Chat with us on WhatsApp"
+				hidden
 			>
 				<i class="fab fa-whatsapp"></i>
 			</a>
+			<script>
+				(function() {
+					var whatsappButton = document.getElementById('whatsapp-float');
+					if (!whatsappButton) {
+						return;
+					}
+
+					var searchParams = new URLSearchParams(window.location.search);
+					if (searchParams.get('ad') === 'sg') {
+						whatsappButton.hidden = false;
+					}
+				})();
+			</script>
 
 	  {% include footer.html %}
 
