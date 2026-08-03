@@ -17,7 +17,7 @@ We created a hands-on STEM exhibit that introduces children to hydraulics and th
 
 The project covered concept design, CAD modeling, simulation, prototyping, 3D printing, CNC machining, and extensive user testing to ensure both durability and intuitive operation in a public setting.
 
-<img src="assets/img/optimized-large/IMG-20251103-WA0003.jpg" alt="Close-up of the hydraulic arm mechanism with levers and controls" class="img-fluid w-75">
+<iframe width="100%" height="600" src="https://www.youtube.com/embed/uw1bcroC_Tw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-fullscreen" allowfullscreen></iframe>
 
 The interactive has been deployed at Science Centre Singapore and as part of a travelling exhibit that brings STEM learning directly to schools, inspiring young learners to explore engineering through play and discovery.
 

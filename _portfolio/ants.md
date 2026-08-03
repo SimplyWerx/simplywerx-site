@@ -13,7 +13,7 @@ alt: Move The Balls interactive
 
 This interactive exhibit combines playful design with engineering precision, inviting participants to guide balls along a track using levers, switches, and motorized mechanisms. The experience demonstrates principles of motion, control systems, and mechanical feedback in a way that is intuitive and engaging.
 
-<img src="assets/img/optimized-large/IMG-20240306-WA0002.jpg" alt="Move The Balls exhibit with interactive track and controls" class="img-fluid w-75">
+<iframe width="100%" height="600" src="https://www.youtube.com/embed/cN51SotAc3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-fullscreen" allowfullscreen></iframe>
 
 Built with robust electromechanical components and tested for durability, Move The Balls is made to withstand repeated use in public spaces while remaining accessible to visitors of all ages. By blending fun with STEM learning, it turns a simple challenge into a hands-on exploration of engineering concepts.
 

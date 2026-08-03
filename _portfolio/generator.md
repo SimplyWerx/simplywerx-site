@@ -2,7 +2,7 @@
 caption:
   title: Generator Race
   subtitle: A competitive electromechanical exhibit on energy conversion
-  thumbnail: "assets/img/optimized-small/IMG-20240618-WA0000.webp"
+  thumbnail: "assets/img/optimized-small/IMG-20240906-WA0000.webp"
 
 title: Generating Electrical Energy
 subtitle: Visitors generate electrical energy by spinning a barrel linked to a dynamo.
@@ -17,7 +17,7 @@ This interactive exhibit demonstrates energy conversion through fun, hands-on pl
 
 We solved the engineering challenge of making the exhibit robust enough for unattended play and intuitive enough for visitors to use without instructions. The result is an experience that remains accessible, reliable, and durable in high-traffic environments.
 
-<img src="assets/img/optimized-large/20240912_095519.jpg" alt="Close-up of the generator mechanism and dynamo system" class="img-fluid w-75">
+<iframe width="100%" height="600" src="https://www.youtube.com/embed/8Yw0uq_FTfw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-fullscreen" allowfullscreen></iframe>
 
 {:.list-inline}
 
